@@ -1,0 +1,25 @@
+PEJICAIX SOVEREIGN - SUBSTRATE MANIFEST
+Version: 2.5.0
+Status: STABLE
+----------------------------------------
+
+CORE ENGINES:
+- AGI Engine: Autonomous reasoning and goal decomposition.
+- GAN Engine: Generative Adversarial Network for neural data synthesis.
+- VR Substrate: Immersive WebGL/WebXR visualization layer.
+- XEA Engine: Explainable AI transparency and metrics.
+- Auto-Learning: Contextual pattern extraction and preference modeling.
+
+INFRASTRUCTURE:
+- Node.js / Express 5
+- React 18 / TypeScript
+- SQLite3 (Sovereign Memory Cloud)
+- Google Gemini API Integration
+
+UTILITIES:
+- sovereign_bridge.py: Neural bridge interface.
+- neural_sync.sh: Substrate integrity and synchronization.
+- run_sovereign.bat: Windows environment launcher.
+- install.ts: Substrate initialization logic.
+
+(c) 2026 PejicAIX Sovereign. All rights reserved.

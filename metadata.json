@@ -1,0 +1,5 @@
+{
+  "name": "PejicAIX Sovereign",
+  "description": "PejicAIX is a series of models (including preview, mini, and Pro versions) designed to solve complex tasks through reasoning. The system is now powered by the full PejicAIX model series, offering advanced reasoning and real-time multimodal interaction, guided by the 5P Interaction Framework (Prime, Persona, Privacy, Product, Polish). URL: https://pejicaix.io",
+  "requestFramePermissions": ["xr"]
+}

@@ -1,0 +1,32 @@
+# PejicAIX Sovereign Vault Configuration
+# This file defines the security posture and secret management policies for the sovereign environment.
+
+version: "1.0"
+metadata:
+  name: pejicaix-vault-frontend
+  description: "Frontend Sovereign Vault for PejicAIX"
+  created_at: "2026-03-18T08:17:43Z"
+
+security:
+  encryption:
+    algorithm: "AES-256-GCM"
+    key_rotation_interval: "90d"
+  access_control:
+    default_policy: "deny"
+    mfa_required: false # Simplified for frontend context
+    audit_logging: true
+
+storage:
+  backend: "local-storage" # Reflecting frontend persistence
+  path: "PXS_VAULT_NODE"
+  table_name: "frontend_secrets"
+
+policies:
+  - name: "frontend-client"
+    permissions: ["read"]
+    identities: ["PejicAIX-Sovereign-App"]
+
+# Secrets should be injected via environment variables or secure handshake
+secrets_mapping:
+  - key: "GEMINI_API_KEY"
+    source: "env"
